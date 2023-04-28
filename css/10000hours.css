@@ -252,3 +252,57 @@ button {
   background-color: #fff;
   margin-left: 20px;
 }
+
+/* modal fix*/
+#modal {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+/* modal background */
+#modal .modal_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+#modal .cheer {
+  font-family: "OTEnjoystoriesBA";
+  color: #5b2386;
+  text-align: center;
+}
+
+#modal .cheer h1 {
+  font-size: 80px;
+}
+
+#modal .cheer h3 {
+  font-size: 30px;
+}
+
+#modal .licat_img {
+  margin-bottom: 20px;
+}
+
+#modal .close_btn {
+  box-shadow: 0px 6px 16px 0px rgb(0 0 0 / 15%),
+    0px 5px 16px 0px rgb(0 0 0 / 15%);
+  margin-bottom: 20px;
+}
+
+#modal .btn p {
+  color: #747474;
+  font-size: 13px;
+  text-align: center;
+}
