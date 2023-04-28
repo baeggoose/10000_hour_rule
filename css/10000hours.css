@@ -43,3 +43,14 @@
     transform: rotate(360deg);
   }
 }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "GmarketSansMedium";
+  background-color: #5b2386;
+  color: #fff;
+}
