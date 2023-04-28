@@ -306,3 +306,20 @@ button {
   font-size: 13px;
   text-align: center;
 }
+
+/* copyright */
+#copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  left: 0;
+  bottom: 0;
+}
+
+#copyright p {
+  font-size: 10px;
+  line-height: 1.5;
+  padding: 20px 0;
+  text-align: center;
+}
