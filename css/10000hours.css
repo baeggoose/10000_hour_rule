@@ -68,3 +68,27 @@ body {
   flex-direction: column;
   margin-top: 50px;
 }
+
+/* title image */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.title .clock_img {
+  width: 265px;
+  height: 265px;
+}
+
+.title_img {
+  position: absolute;
+  width: 564px;
+}
+
+.title_img img {
+  width: 100%;
+  height: auto;
+}
