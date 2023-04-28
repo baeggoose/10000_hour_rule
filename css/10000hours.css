@@ -132,6 +132,7 @@ body {
 
 /* inputs */
 .inputs {
+  /* flex 받는 요소가 다르기 때문에 각각 적용한다 */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,6 +141,7 @@ body {
 }
 
 .inputs div {
+  /* flex 받는 요소가 다르기 때문에 각각 적용한다 */
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -157,4 +159,20 @@ body {
 
 .inputs input::placeholder {
   color: #babcbe;
+}
+
+/* button style */
+button {
+  display: flex;
+  align-items: center;
+  font-family: "GmarketSansBold";
+  font-size: 20px;
+  color: #5b2386;
+  background-color: #fcee21;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 40px;
+  cursor: pointer;
+  /* 단어 단위로 줄바꿈하는 속성 */
+  word-break: keep-all;
 }
