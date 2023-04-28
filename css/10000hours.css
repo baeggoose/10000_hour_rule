@@ -176,3 +176,20 @@ button {
   /* 단어 단위로 줄바꿈하는 속성 */
   word-break: keep-all;
 }
+
+/* start button */
+.start {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.start .btn_wrap {
+  position: relative;
+}
+
+.start .click_img {
+  position: absolute;
+  right: -75px;
+  bottom: -25px;
+}
