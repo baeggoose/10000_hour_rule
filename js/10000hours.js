@@ -9,10 +9,10 @@ const loading = document.querySelector(".result_loading");
 function calculator() {
   const fieldValue = document.querySelector("#field_value");
   let timeValue = document.querySelector("#time_value");
-  let timeValue_int = Number(time_value.value);
+  let timeValue_int = Number(timeValue.value);
 
-  const fieldResult = document.querySelector("#field_result");
-  const timeResult = document.querySelector("#time_result");
+  const fieldResult = document.querySelector(".field_result");
+  const timeResult = document.querySelector(".time_result");
 
   if (fieldValue.value == "") {
     alert("입력되지 않았습니다.");
@@ -43,7 +43,7 @@ function openModal() {
 }
 
 function closeModal() {
-  modal.style.display = "flex";
+  modal.style.display = "none";
 }
 
 window.onclick = function (event) {
@@ -68,5 +68,5 @@ function copyUrl() {
 
 shareButton.addEventListener("click", copyUrl);
 openButton.addEventListener("click", openModal);
-closeModal.addEventListener("click", closeModal);
+closeButton.addEventListener("click", closeModal);
 startButton.addEventListener("click", calculator);
