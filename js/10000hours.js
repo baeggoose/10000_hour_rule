@@ -46,6 +46,12 @@ function closeModal() {
   modal.style.display = "flex";
 }
 
+window.onclick = function (event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+};
+
 function copyUrl() {
   // url을 카피하는 소스코드를 구글링하여 넣어주면 된다
   let url = window.location.href;
