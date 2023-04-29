@@ -6,10 +6,59 @@ const result = document.querySelector(".result");
 const modal = document.querySelector("#modal");
 const loading = document.querySelector(".result_loading");
 
-function calculator() {}
-function openModal() {}
-function closeModal() {}
-function copyUrl() {}
+function calculator() {
+  const fieldValue = document.querySelector("#field_value");
+  let timeValue = document.querySelector("#time_value");
+  let timeValue_int = Number(time_value.value);
+
+  const fieldResult = document.querySelector("#field_result");
+  const timeResult = document.querySelector("#time_result");
+
+  if (fieldValue.value == "") {
+    alert("입력되지 않았습니다.");
+    fieldValue.focus();
+    return false;
+  } else if (timeValue.value == "") {
+    alert("입력되지 않았습니다.");
+    timeValue.focus();
+    return false;
+  } else if (timeValue_int > 24) {
+    alert("잘못된 값입니다. 24 이하의 값을 입력해 주세요.");
+    return false;
+  }
+
+  result.style.display = "none";
+  loading.style.display = "flex";
+
+  setTimeout(function () {
+    loading.style.display = "none";
+    result.style.display = "flex";
+    fieldResult.innerText = fieldValue.value;
+    timeResult.innerText = parseInt(10000 / timeValue_int, 10);
+  }, 1800);
+}
+
+function openModal() {
+  modal.style.display = "flex";
+}
+
+function closeModal() {
+  modal.style.display = "flex";
+}
+
+function copyUrl() {
+  // url을 카피하는 소스코드를 구글링하여 넣어주면 된다
+  let url = window.location.href;
+  let tmp = document.createElement("input");
+
+  document.body.appendChild(tmp);
+  tmp.value = url;
+  tmp.select();
+  document.execCommand("copy");
+  document.body.removeChild(tmp);
+
+  alert("URL이 복사되었습니다");
+}
 
 shareButton.addEventListener("click", copyUrl);
 openButton.addEventListener("click", openModal);
