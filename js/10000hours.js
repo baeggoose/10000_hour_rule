@@ -54,16 +54,24 @@ window.onclick = function (event) {
 
 function copyUrl() {
   // url을 카피하는 소스코드를 구글링하여 넣어주면 된다
-  let url = window.location.href;
-  let tmp = document.createElement("input");
+  // let url = window.location.href;
+  // let tmp = document.createElement("input");
 
-  document.body.appendChild(tmp);
-  tmp.value = url;
-  tmp.select();
-  document.execCommand("copy");
-  document.body.removeChild(tmp);
+  // execCommand는 사용되지 않아 권장하지않는다. 일부 브라우저는 이를 지원하나, 호환성 목적으로만 유지된다.
+  // document.body.appendChild(tmp);
+  // tmp.value = url;
+  // tmp.select();
+  // document.execCommand("copy");
+  // document.body.removeChild(tmp);
 
-  alert("URL이 복사되었습니다");
+  // clipboard API를 사용한 클립보드 복사
+  // promise 방식을 기반으로 작동하며, 비동기로 클립보드 데이터에 접근할 수 있다
+
+  const url = window.location.href;
+
+  navigator.clipboard.writeText(url).then(() => {
+    alert("URL이 복사되었습니다");
+  });
 }
 
 shareButton.addEventListener("click", copyUrl);
