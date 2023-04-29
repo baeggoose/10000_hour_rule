@@ -6,7 +6,12 @@ const result = document.querySelector(".result");
 const modal = document.querySelector("#modal");
 const loading = document.querySelector(".result_loading");
 
+function calculator() {}
+function openModal() {}
+function closeModal() {}
+function copyUrl() {}
+
 shareButton.addEventListener("click", copyUrl);
 openButton.addEventListener("click", openModal);
-closemodal.addEventListener("click", closeModal);
+closeModal.addEventListener("click", closeModal);
 startButton.addEventListener("click", calculator);
