@@ -13,3 +13,5 @@ https://www.figma.com/file/PdrZO6HgZILqCkqcjPRwcw/10000hours?type=design&node-id
 전문가가 되기위해 매일 훈련할 시간을 입력받아, 10000시간을 채우려면 몇일이 걸리는지 계산해줍니다
 
 훈련하기 버튼을 누르면 귀여운 모달 창이 나옵니다 :)
+
+https://baeggoose.github.io/10000_hour_rule/10000hours.html
